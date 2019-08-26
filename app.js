@@ -15,4 +15,5 @@ app.listen(port, () => {
 
 setInterval(() => {
   https.get("https://glacial-gorge-38769.herokuapp.com/");
+  http.get("https://fierce-temple-39819.herokuapp.com/");
 }, 300000);
