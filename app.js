@@ -5,7 +5,6 @@ const port = process.env.PORT || 3000;
 const app = express();
 
 app.get('/', (req, res) => {
-  console.log('you got me')
   res.send(JSON.stringify({ Hello: 'World' }));
 });
 
@@ -14,6 +13,6 @@ app.listen(port, () => {
 });
 
 setInterval(() => {
-  https.get("https://glacial-gorge-38769.herokuapp.com/");
+  https.get("https://keepalivee.herokuapp.com/");
   https.get("https://fierce-temple-39819.herokuapp.com/");
 }, 300000);
