@@ -5,6 +5,7 @@ const port = process.env.PORT || 3000;
 const app = express();
 
 app.get('/', (req, res) => {
+  console.log('request received');
   res.send(JSON.stringify({ Hello: 'World' }));
 });
 
